@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import "../css/Menu.css"
 import game from "../static/game.jpg"
 import music from "../static/music.jpg"
@@ -29,5 +30,10 @@ class Menu extends React.Component {
     }
 }
 
+Menu.propTypes = {
+    active: PropTypes.number.isRequired,
+    menuItems: PropTypes.arrayOf(PropTypes.string).isRequired,
+    songImgUrl: PropTypes.string.isRequired
+};
 
 export default Menu;

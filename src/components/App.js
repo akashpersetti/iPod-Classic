@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 // import css file
 import '../css/App.css';
@@ -299,5 +300,7 @@ class App extends React.Component {
     );
   }
 }
+
+App.propTypes = {};
 
 export default App;

@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 // Renderse lockscreen
 class LockScreen extends React.Component {
@@ -17,5 +18,6 @@ class LockScreen extends React.Component {
 
 }
 
+LockScreen.propTypes = {};
 
 export default LockScreen;

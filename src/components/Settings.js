@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import "../css/Settings.css"
 
  // Renders settings
@@ -20,5 +21,8 @@ class Settings extends React.Component {
 
 }
 
+Settings.propTypes = {
+    active: PropTypes.number.isRequired
+};
 
 export default Settings;

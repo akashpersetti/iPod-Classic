@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import "../css/Themes.css"
 
 // Render wheel color change menu
@@ -20,5 +21,8 @@ class WheelColor extends React.Component {
 
 }
 
+WheelColor.propTypes = {
+    active: PropTypes.number.isRequired
+};
 
 export default WheelColor;

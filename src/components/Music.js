@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import "../css/Music.css"
 
 // Renders music menu
@@ -20,5 +21,9 @@ class Music extends React.Component {
 
 }
 
+Music.propTypes = {
+    musicItems: PropTypes.arrayOf(PropTypes.string).isRequired,
+    active: PropTypes.number.isRequired
+};
 
 export default Music;

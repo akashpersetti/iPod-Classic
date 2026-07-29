@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import "../css/Navbar.css"
 import BatImg from "../static/battery.png"
 
@@ -69,5 +70,11 @@ class Navbar extends React.Component {
     }
 }
 
+Navbar.propTypes = {
+    playing: PropTypes.bool.isRequired,
+    noty: PropTypes.bool.isRequired,
+    notifyText: PropTypes.string.isRequired,
+    setNoty: PropTypes.func.isRequired
+};
 
 export default Navbar;
