@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import "../css/Case.css"
 import Wheel from './Wheel.js'
 import Display from './Display.js'
@@ -17,5 +18,31 @@ class Case extends React.Component {
         )
     }
 }
+
+Case.propTypes = {
+    active: PropTypes.number.isRequired,
+    updateActiveMenu: PropTypes.func.isRequired,
+    currentMenu: PropTypes.number.isRequired,
+    changeMenuBackward: PropTypes.func.isRequired,
+    changeMenuForward: PropTypes.func.isRequired,
+    menuItems: PropTypes.array.isRequired,
+    musicItems: PropTypes.array.isRequired,
+    togglePlayPause: PropTypes.func.isRequired,
+    songItems: PropTypes.array.isRequired,
+    playing: PropTypes.bool.isRequired,
+    songIndex: PropTypes.number.isRequired,
+    theme: PropTypes.string.isRequired,
+    audio: PropTypes.object,
+    songUrl: PropTypes.string.isRequired,
+    songImgUrl: PropTypes.string.isRequired,
+    seekSongForward: PropTypes.func.isRequired,
+    seekSongReverse: PropTypes.func.isRequired,
+    wheelColor: PropTypes.string.isRequired,
+    wallpaper: PropTypes.string.isRequired,
+    wallpaperItems: PropTypes.array.isRequired,
+    noty: PropTypes.bool.isRequired,
+    setNoty: PropTypes.func.isRequired,
+    notifyText: PropTypes.string.isRequired
+};
 
 export default Case;

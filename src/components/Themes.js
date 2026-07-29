@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import "../css/Themes.css"
 
 // Renders themes menu
@@ -20,5 +21,8 @@ class Themes extends React.Component {
 
 }
 
+Themes.propTypes = {
+    active: PropTypes.number.isRequired
+};
 
 export default Themes;

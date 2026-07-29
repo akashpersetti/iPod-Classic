@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import "../css/Wheel.css"
 import ZingTouch from 'zingtouch';
 // Render wheel
@@ -106,5 +107,17 @@ class Wheel extends React.Component {
 
 }
 
+Wheel.propTypes = {
+    changeMenuForward: PropTypes.func.isRequired,
+    active: PropTypes.number.isRequired,
+    currentMenu: PropTypes.number.isRequired,
+    theme: PropTypes.string.isRequired,
+    wheelColor: PropTypes.string.isRequired,
+    updateActiveMenu: PropTypes.func.isRequired,
+    changeMenuBackward: PropTypes.func.isRequired,
+    togglePlayPause: PropTypes.func.isRequired,
+    seekSongForward: PropTypes.func.isRequired,
+    seekSongReverse: PropTypes.func.isRequired
+};
 
 export default Wheel;

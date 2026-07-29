@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import "../css/Playing.css"
 
 class Playing extends React.Component {
@@ -61,5 +62,12 @@ class Playing extends React.Component {
     }
 }
 
+Playing.propTypes = {
+    songItems: PropTypes.array.isRequired,
+    playing: PropTypes.bool.isRequired,
+    songIndex: PropTypes.number.isRequired,
+    audio: PropTypes.instanceOf(Audio).isRequired,
+    songImgUrl: PropTypes.string.isRequired
+};
 
 export default Playing;

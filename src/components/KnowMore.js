@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import "../css/KnowMore.css"
 
 // Renders themes menu
@@ -50,5 +51,6 @@ class KnowMore extends React.Component {
 
 }
 
+KnowMore.propTypes = {};
 
 export default KnowMore;

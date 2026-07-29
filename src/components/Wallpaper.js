@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 // Renders wallpaper menu
 class Wallpaper extends React.Component {
@@ -18,5 +19,9 @@ class Wallpaper extends React.Component {
     }
 
 }
+
+Wallpaper.propTypes = {
+    active: PropTypes.number.isRequired
+};
 
 export default Wallpaper;

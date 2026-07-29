@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import Navbar from '../components/Navbar';
 import Menu from '../components/Menu';
 import Music from '../components/Music';
@@ -40,5 +41,22 @@ class Display extends React.Component {
     }
 }
 
+Display.propTypes = {
+    active: PropTypes.number.isRequired,
+    currentMenu: PropTypes.number.isRequired,
+    menuItems: PropTypes.array.isRequired,
+    musicItems: PropTypes.array.isRequired,
+    songItems: PropTypes.array.isRequired,
+    playing: PropTypes.bool.isRequired,
+    songIndex: PropTypes.number.isRequired,
+    audio: PropTypes.object,
+    songUrl: PropTypes.string.isRequired,
+    songImgUrl: PropTypes.string.isRequired,
+    wallpaper: PropTypes.number.isRequired,
+    wallpaperItems: PropTypes.array.isRequired,
+    noty: PropTypes.bool.isRequired,
+    setNoty: PropTypes.func.isRequired,
+    notifyText: PropTypes.string.isRequired
+};
 
 export default Display;
